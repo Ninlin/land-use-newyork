@@ -134,15 +134,12 @@ map.on("mousemove", function(event) {
 });
 
 map.on ("click", function(event) {
-    /// console.log("Mouse clicked"),
-    /// console.log(event.point);
+
     var geometry = event.point;
     var parameters = {
         layers:["mn-mappluto-23n930"]
    };
    var features = map.queryRenderedFeatures(geometry, parameters); 
-   /// console.log(features);
-   /// console.log(features.length); 
    var lot = features[0];
    console.log(lot);
 
